@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/918535eedb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div>
+        <section class="parallax">
+            <nav class="container">
+                <h1 style="color: #49c5b6; font-size: 50px;">Port<span style="color:white">folio</span></h1>
+                <ul id="sidemenu">
+                        
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <i class="fas fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <img src="./images/edited/hill2.png" id="hill2">
+                <img src="./images/edited/hill3.png" id="hill3">
+                <div class="header-text" id="intro">
+                    <h3>Software Engineer</h3>
+                    <h1><span>Hi</span>, I'm <span>Pranay </span>Shah</h1>
+                </div>
+                <img src="./images/edited/hill4.png" id="hill4">
+                <img src="./images/edited/hill5.png" id="hill5">
+                <img src="./images/edited/leaf1.png"  id="leaf">
+                <img src="./images/edited/plant.png" id="plant">
+                <img src="./images/edited/tree.png"  id="tree">
+            </section>
+            
+        </div>
+    </div>
+    
+    <!--about section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" id="col1">
+                    <img src="./images/solo.png" alt="myimg">
+                </div>
+                <div class="about-col-2" id="col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Iste perspiciatis totam quidem itaque dolore incidunt.
+                         Ipsa quaerat ad corporis nulla tempore fugit. Quidem repellat possimus a, totam est quasi. A? <br>
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Android/ios app development</li>
+                            <li><span>Game Development</span><br>Game development/Unity</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Personal Projects</span><br>Created some personal projects</li>
+                            <li><span>Working jobs</span><br>Currently not working lmao</li>
+                            <li><span>internship</span><br>Company 3</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>School:</span><br>Green lawns Academy </li>
+                            <li><span>HighSchool/+2</span><br>St xaviers college</li>
+                            <li><span>Bachelors</span><br>KIIT university Btech.CSE</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------services-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetlestiae quaerat dignissimos culpa unde officia eius dicta! Numquam!</p>
+                    <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>App development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Distinctio doloremque numquam quam ullam blanditiis eaque at  officia eius dicta! Numquam!</p>
+                         <a href="">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Game development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         olestiae quaerat 
+                         dignissimos culpa unde officia eius dicta! Numquam!</p>
+                         <a href="">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------portfolio-------- -->
+    <div id="portfolio">
+        <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+            <div class="project-list">
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/v9GLidhUlCfiP1TMnfavA5ewr6h7O8L33CIBoxrnOo8/rs:fit:455:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5z/TFpfZFFaQjlTcmFs/ckRlYldLNVRnQUFB/QSZwaWQ9QXBp" alt="">
+                    <div class="layer">
+                        <h2>Project 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quisquam, quod.</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/v9GLidhUlCfiP1TMnfavA5ewr6h7O8L33CIBoxrnOo8/rs:fit:455:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5z/TFpfZFFaQjlTcmFs/ckRlYldLNVRnQUFB/QSZwaWQ9QXBp" alt="">
+                    <div class="layer">
+                        <h2>Project 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quisquam, quod.</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/v9GLidhUlCfiP1TMnfavA5ewr6h7O8L33CIBoxrnOo8/rs:fit:455:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5z/TFpfZFFaQjlTcmFs/ckRlYldLNVRnQUFB/QSZwaWQ9QXBp" alt="">
+                    <div class="layer">
+                        <h2>Project 3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quisquam, quod.</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/v9GLidhUlCfiP1TMnfavA5ewr6h7O8L33CIBoxrnOo8/rs:fit:455:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5z/TFpfZFFaQjlTcmFs/ckRlYldLNVRnQUFB/QSZwaWQ9QXBp" alt="">
+                    <div class="layer">
+                        <h2>Project 4</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quisquam, quod.</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <a href="" class="btn">View More</a>
+        </div> 
+    </div>
+   <!-- ---------- contact------ -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> pranayshah2021@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i> 984-123-4567</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-solid fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-solid fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-so lid fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-solid fa-linkedin"></i></a>
+
+                </div>
+                <a href="docs/resume.pdf" download class="btn btn2">Download CV</a>
+            </div> 
+            <div class="contact-right">
+                    <form onsubmit="sendEmail();">
+                        <input type="text" placeholder="Name" required id="Name-text">
+                        <input type="email" placeholder="Email" id="Email" required>
+                        <textarea name="Message" id="Message" rows="6" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn btn2" value="Send Message" >Submit</button>
+                    </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> © pranay shah portfolio <i class="fa-sharp fa-solid fa-clover fa-spin"></i></p>
+        </div>
+    </div>
+   </div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    //changing tabs in about me
+    var tablinks=document.getElementsByClassName("tab-link");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       
+    }
+    //sidemenu hamburger
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+    //parallax scrolling
+    let text=document.getElementById("intro");
+    let leaf=document.getElementById("leaf");
+    let hill1=document.getElementById("hill1");
+    let hill2=document.getElementById("hill2");
+    let hill3=document.getElementById("hill3");
+    let hill4=document.getElementById("hill4");
+    let hill5=document.getElementById("hill5");
+    window.addEventListener('scroll',() => {    
+    let value=window.scrollY;
+    text.style.marginLeft=value*2.5+'px';
+    leaf.style.top=value *-0.5+'px';
+    leaf.style.left=value *1+'px';
+    hill5.style.left=value*0.5+'px';
+    hill4.style.left=value*-0.5+'px';
+    hill1.style.top=value*1+'px';
+
+
+    //form submit
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "pranayshahsecond2021@gmail.com",
+            Password : "h@!lth0r",
+            To : 'pranayshahsecond2021@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "You have a message from your portfolio",
+            Body : "Here it is"
+            }).then(
+            message => alert(message)
+        );
+    }
+});
+
+
+</script>
+</body>
+</html>
