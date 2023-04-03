@@ -3,19 +3,19 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    
+    color: #c5c6c7;
 }
+
 html{
     scroll-behavior: smooth;
 }
 body{
-    
     background:#000000;
     background-image: url("images/edited/hill1.png");
-    color: #fff;
     background-repeat: no-repeat;
     overflow-x: hidden;
 }
+
 
 .parallax img{
     justify-content: center;
@@ -26,7 +26,7 @@ body{
     pointer-events: none;
     top:0;
     left:0;
-    z-index: -1;
+    z-index: -100;
 }
 #header{
     width: 100%;
@@ -47,7 +47,6 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #fff;
     font-size: 18px;
     position: relative;
 }
@@ -64,11 +63,12 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-.header-text {   
-   z-index: 3;
-   font-size: 30px;
-   text-align: center;
-   margin-top: 200px;
+.parallax .header-text { 
+    white-space: nowrap;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 200px;
+    z-index: -1;
 }
 .header-text h1{
     font-size: 50px;
@@ -78,38 +78,49 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color:  #49c5b6;
 }
+.header-text h3 span{
+    color:  #49c5b6;
+}
+.colored {
+    color: #45a29e;
+}
 
 /* About section */
 
 #about{
-    padding: 100px 0 50px 0;
-    
+    padding: 80px 10px 50px 100px;
 }
 .row{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 .about-col-1{
-    flex-basis:35%;
-   
+    flex-basis: 35%;
 }
 .about-col-1 img{
-    width: 50%;
-    border-radius: 15px;
-    padding-left: 10px;
+    
+    margin-top: 50px;
+    width: 70%;
+    border-radius: 50px;
 }
 .about-col-2{
-    flex-basis: 65%;
+    flex-basis: 60%;
+    padding-right: 100px;
+    font-size: 14px;
 }
 .subtitle{
     font-size: 40px;
     font-weight: 600;
-    color:#fff
+}
+.subtitle span{
+    color: #45a29e;
 }
 .tab-titles {
     display: flex;
     margin: 20px 0 40px 0px;
+    color: #45a29e;
 }
 .tab-link{
     font-size: 20px;
@@ -117,12 +128,13 @@ nav ul li a:hover::after{
     margin-right: 10px;
     cursor: pointer;
     position: relative;
+    color: #45a29e;
 }
 .tab-link::after{
     content: '';
     width:0;
     height:3px;
-    background: #49c5b6;
+    background: #66fcf1;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -136,7 +148,7 @@ nav ul li a:hover::after{
     margin:10px 0;
 }
 .tab-contents ul li span{
-    color: #327d75;
+    color: #45a29e;
     font-size: 14px;
     margin-top: 4px;
 } 
@@ -175,7 +187,6 @@ nav ul li a:hover::after{
 }
 .services-list div a{
    text-decoration: none;
-   color: white;
    font-size: 12px;
    margin-top: 20px;
    display: inline-block;
@@ -188,7 +199,7 @@ nav ul li a:hover::after{
 
 /*------------------ Portfolio -----------------*/
 
-#portfolio{
+#projects{
     padding: 50px 0;
 }
 .project-list{
@@ -264,7 +275,6 @@ nav ul li a:hover::after{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: white;
     transition: background 0.5s, color 0.5s;
 }
 .btn:hover{
@@ -320,7 +330,7 @@ form input,form textarea{
     padding: 15px;
     font-size: 18px;
     background: #262626;
-    color: #fff;
+
 }
 form .btn2{
     padding: 14px 60px;

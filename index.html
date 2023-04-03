@@ -13,14 +13,14 @@
         <div>
         <section class="parallax">
             <nav class="container">
-                <h1 style="color: #49c5b6; font-size: 50px;">Port<span style="color:white">folio</span></h1>
-                <ul id="sidemenu">
+                <h1 style="color: #49c5b6; font-size: 50px;">Port<span>folio</span></h1>
+                <ul id="sidemenu" >
                         
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li class="colored"><a href="#header">Home</a></li>
+                        <li > <a href="#about">About</a></li>
+                        <li class="colored"><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li class="colored"><a href="#services">Services</a></li>
                         <i class="fas fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                     </ul>
                     <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
@@ -28,8 +28,8 @@
                 <img src="./images/edited/hill2.png" id="hill2">
                 <img src="./images/edited/hill3.png" id="hill3">
                 <div class="header-text" id="intro">
-                    <h3>Software Engineer</h3>
-                    <h1><span>Hi</span>, I'm <span>Pranay </span>Shah</h1>
+                    <h3>Welcome <span>to </span>my <span>Website</span></h3>
+                    <h1 id="intro2"><span>Hi</span>, I'm <span>Pranay </span>Shah</h1>
                 </div>
                 <img src="./images/edited/hill4.png" id="hill4">
                 <img src="./images/edited/hill5.png" id="hill5">
@@ -46,13 +46,24 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1" id="col1">
-                    <img src="./images/solo.png" alt="myimg">
+                    <img src="./images/me.jpeg" alt="myimg">
                 </div>
+
+                
                 <div class="about-col-2" id="col2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Iste perspiciatis totam quidem itaque dolore incidunt.
-                         Ipsa quaerat ad corporis nulla tempore fugit. Quidem repellat possimus a, totam est quasi. A? <br>
+                    <h1 class="subtitle">About <span>Me</span></h1>
+                    <br>
+                    <p> I am currently a second-year \
+                        B.Tech student pursuing Computer Science and Engineering at Kaling Institute of Industrial Technology(India). <br>
+                        <br>
+                        I have always been passionate about technology and its endless possibilities. 
+                        This passion has led me to explore various domains of Computer Science and programming.<br> 
+                        In my academic journey so far, I have gained a strong foundation in various programming 
+                        languages such as C,C++,java and C#. <br><br>
+                        I am currently trying to learn full stack Web development and App development. <br><br>
+                        
+                        I am always eager to learn new technologies and skills and apply them to create innovative solutions.<br><br>
+
                     </p>
                     <div class="tab-titles">
                         <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
@@ -89,11 +100,11 @@
     <!---------------services-------------->
     <div id="services">
         <div class="container">
-            <h1 class="subtitle">My Services</h1>
+            <h1 class="subtitle">My <span class="colored">Services</span></h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web development</h2>
+                    
+                    <h2 class="colored">Web development <i class="fa-solid fa-code"></i></h2>
                     <p>Lorem ipsum dolor sit amet, consectetlestiae quaerat dignissimos culpa unde officia eius dicta! Numquam!</p>
                     <a href="">learn more</a>
                 </div>
@@ -117,7 +128,7 @@
     </div>
 
     <!-- -------portfolio-------- -->
-    <div id="portfolio">
+    <div id="projects">
         <div class="container">
         <h1 class="subtitle">My Projects</h1>
             <div class="project-list">
@@ -227,16 +238,16 @@
     let hill3=document.getElementById("hill3");
     let hill4=document.getElementById("hill4");
     let hill5=document.getElementById("hill5");
+    let about1=document.getElementById("col1")
     window.addEventListener('scroll',() => {    
     let value=window.scrollY;
-    text.style.marginLeft=value*2.5+'px';
+    text.style.marginRight=value*2.5+'px';
     leaf.style.top=value *-0.5+'px';
     leaf.style.left=value *1+'px';
     hill5.style.left=value*0.5+'px';
     hill4.style.left=value*-0.5+'px';
     hill1.style.top=value*1+'px';
-
-
+    
     //form submit
     function sendEmail(){
         Email.send({
