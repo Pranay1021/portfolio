@@ -243,12 +243,12 @@ nav ul li a:hover::after{
 .layer h2{
     font-size: 20px;
     font-weight: 500;
-    color: rgb(78, 166, 166);
+    color: black;
     margin-bottom: 10px;
 }
 .layer p{
     font-weight: 300;
-    color: #49c5b6;
+    color: black;
     margin-bottom: 10px;
 }
 .layer a{
@@ -265,7 +265,7 @@ nav ul li a:hover::after{
 .layer a i{
     align-items: center;
     font-size: 20px;
-    color: #49c5b6;
+    color: black;
 }
 .work img:hover {
     transform: scale(1.1);
