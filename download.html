@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #49c5b6;
+    padding: 20px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.5s, color 0.5s;
+    }
+    .btn:hover{
+        background-color: #49c5b6;
+        color: black;
+    }
+    .btn:hover p{
+        color: black;
+    }
+    .btn p{
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+        color: #49c5b6;
+    }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="container">
+    <a href="apks/myapp.apk" class="btn" ><p>Download</p></a>
+    </div>
+</body>
+</html>
