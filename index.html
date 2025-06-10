@@ -1,252 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/918535eedb.js" crossorigin="anonymous"></script>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="portfolio_second">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>portfolio_second</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <div id="header">
-        <div>
-        <section class="parallax">
-            <nav class="container">
-                <h1 style="color: #49c5b6; font-size: 50px;">Port<span>folio</span></h1>
-                <ul id="sidemenu" >
-                        
-                        <li class="colored"><a href="#header">Home</a></li>
-
-                        <li > <a href="#about">About</a></li>
-                        <li class="colored"><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li class="colored"><a href="#services">Services</a></li>
-                        <li class="colored"><a href="privacy_policy.html">Privacy_policy</a></li>
-                        <i class="fas fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-                </nav>
-                <img src="./images/edited/hill2.png" id="hill2">
-                <img src="./images/edited/hill3.png" id="hill3">
-                <div class="header-text" id="intro">
-                    <h3>Welcome <span>to </span>my <span>Website</span></h3>
-                    <h1 id="intro2"><span>Hi</span>, I'm <span>Pranay </span>Shah</h1>
-                </div>
-                <img src="./images/edited/hill4.png" id="hill4">
-                <img src="./images/edited/hill5.png" id="hill5">
-                <img src="./images/edited/leaf1.png"  id="leaf">
-                <img src="./images/edited/plant.png" id="plant">
-                <img src="./images/edited/tree.png"  id="tree">
-            </section>
-            
-        </div>
-    </div>
-    
-    <!--about section-->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1" id="col1">
-                    <img src="./images/me.jpeg" alt="myimg">
-                </div>
-
-                
-                <div class="about-col-2" id="col2">
-                    <h1 class="subtitle">About <span>Me</span></h1>
-                    <br>
-                    <p> I am a final year
-                        B.Tech student pursuing Computer Science and Engineering at Kalinga Institute of Industrial Technology,Bhubaneshwar,India. <br>
-                        <br>
-                        I have always been passionate about technology and its endless possibilities. 
-                        This passion has led me to explore various domains of Computer Science and programming.<br> 
-                        In my academic journey so far, I have gained a strong foundation in various programming 
-                        languages such as C,C++,java,Python and C#. <br><br>
-                        I am currently exploring Artificial Intelligence and Machine Learning. <br><br>
-                        I am always eager to learn new technologies and skills and apply them to create innovative solutions.<br><br>
-
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-link" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Programming Languages:</span><br>C, C++, C#, Python, Java, SQL, Dart</li>
-                            <li><span>Platforms:</span><br>Android Studio, Unity, Flutter, React, Jupyter</li>
-                            
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Personal Projects</span><br>Created several personal projects</li>
-                            <li><span>Internship</span><br>Open to Internship</li>
-                            <li><span>Working jobs</span><br>Currently not working </li>
-                           
-                        </ul>
-
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>School:</span><br>Green lawns Academy</li>
-                            <li><span>HighSchool/+2</span><br>St xaviers college</li>
-                            <li><span>Bachelors</span><br>KIIT university Btech.CSE</li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---------------services-------------->
-    <div id="services">
-        <div class="container">
-            <h1 class="subtitle">My <span class="colored">Domains</span></h1>
-            <div class="services-list">
-                <div>
-                    <h2 class="colored">Machine Learning <i class="fa-solid fa-gamepad"></i></h2>
-                    <p>I work on machine learning and deep learning projects using Python, TensorFlow, and related tools to solve real-world problems.</p>
-                    <a href="#projects">Projects</a>
-                </div>
-                <div>
-                    <h2 class="colored">Web/App Development <i class="fa-solid fa-code"></i></h2>
-                    <p>I build cross-platform applications and websites using Flutter, ensuring responsive design and native-like performance.</p>
-                    <a href="#projects">Projects</a>
-                </div>
-                <div>
-                    <h2 class="colored">Game Development <i class="fa-solid fa-crop"></i></h2>
-                    <p>I create interactive 2D/3D games using Unity, combining C# scripting with creativity to deliver immersive gameplay experiences.</p>
-                    <a href="#projects">Projects</a>
-                </div>
-              
-            </div>
-        </div>
-    </div>
-    
-    <!-- -------portfolio-------- -->
-    <div id="projects">
-        <div class="container">
-        <h1 class="subtitle">My Projects</h1>
-            <div class="project-list">
-                <div class="work">
-                    <img src="https://assets.skyfilabs.com/images/blog/good-computer-science-projects-for-beginners.webp" alt="" >
-                    <div class="layer">
-                        <h2>Games</h2>
-                        <p>Do try the games uploaded on my itch account</p>
-                        <a href="https://pranay-shah.itch.io/"><i class="fa-sharp fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="https://assets.skyfilabs.com/images/blog/good-computer-science-projects-for-beginners.webp" alt="">
-                    <div class="layer">
-                        <h2>Research: Multilingual Classification</h2>
-                        <p>Explored text classification techniques using pretrained multilingual models across various languages and classes.</p>
-                        <a href=""><i class="fa-sharp fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="https://assets.skyfilabs.com/images/blog/good-computer-science-projects-for-beginners.webp" alt="">
-                    <div class="layer">
-                        <h2>Research: Optimization in Service Classification</h2>
-                        <p>Conducted research on optimization algorithms to improve performance and accuracy in service category classification tasks.</p>
-                        <a href=""><i class="fa-sharp fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="https://assets.skyfilabs.com/images/blog/good-computer-science-projects-for-beginners.webp" alt="" >
-                    <div class="layer">
-                        <h2>ML/DL Project: Waste Classification</h2>
-                        <p>Built a deep learning model using TensorFlow to classify waste types (organic, recyclable, etc.) from images for smart waste management.</p>
-                        <a href="download.html"><i class="fa-sharp fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                
-                
-            </div>
-            <a href="" class="btn">View More</a>
-        </div> 
-    </div>
-   <!-- ---------- contact------ -->
-   <div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="subtitle">Contact Me</h1>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> pranayshah2021@gmail.com</p>
-                <p><i class="fa-sharp fa-solid fa-phone"></i> 620-086-6687</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/pra.nay.714?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-solid fa-facebook"></i></a>
-                    <a href="https://github.com/Pranay1021" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/_pranay_shah_/" target="_blank"><i class="fa-brands fa-so lid fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/pranayshah1/" target="_blank"><i class="fa-brands fa-solid fa-linkedin"></i></a>
-
-                </div>
-                <a href="docs/resume.pdf" download class="btn btn2">Download CV</a>
-            </div> 
-            <div class="contact-right">
-                    <form action="https://formspree.io/f/mknaqyzy"
-                    method="POST">
-                        <input type="text" placeholder="Name" required id="Name-text">
-                        <input type="email" placeholder="Email" id="Email" required>
-                        <textarea name="Message" id="Message" rows="6" placeholder="Message" required></textarea>
-                        <button type="submit" class="btn btn2" value="Send Message" >Submit</button>
-                    </form>
-            </div>
-        </div>
-        <div class="copyright">
-            <p> © pranay shah portfolio <i class="fa-sharp fa-solid fa-clover fa-spin"></i></p>
-        </div>
-    </div>
-   </div>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    // require('dotenv').config();
- 
-    //changing tabs in about me
-    var tablinks=document.getElementsByClassName("tab-link");
-    var tabcontents=document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-       
-    }
-    //sidemenu hamburger
-    var sidemenu= document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
-    //parallax scrolling
-    let text=document.getElementById("intro");
-    let leaf=document.getElementById("leaf");
-    let hill1=document.getElementById("hill1");
-    let hill2=document.getElementById("hill2");
-    let hill3=document.getElementById("hill3");
-    let hill4=document.getElementById("hill4");
-    let hill5=document.getElementById("hill5");
-    let about1=document.getElementById("col1")
-    window.addEventListener('scroll',() => {    
-    let value=window.scrollY;
-    text.style.marginRight=value*1.5+'px';
-    leaf.style.top=value *-0.5+'px';
-    leaf.style.left=value *1+'px';
-    hill5.style.left=value*0.5+'px';
-    hill4.style.left=value*-0.5+'px';
-    hill1.style.top=value*1+'px';
-    
-});
-
-
-</script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
